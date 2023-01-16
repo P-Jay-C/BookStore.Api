@@ -49,7 +49,7 @@ namespace BookStore.Api.Repository
                 description = bookModel.description,
             };
 
-            _context.Add(book);
+            _context.Books.Add(book);
             await _context.SaveChangesAsync();
 
             return book.id;

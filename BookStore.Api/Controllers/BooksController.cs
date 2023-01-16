@@ -14,7 +14,7 @@ namespace BookStore.Api.Controllers
     {
         private readonly IBookRepository bookRepository;
 
-        public BooksController(IBookRepository bookRepository, IMapper mapper)
+        public BooksController(IBookRepository bookRepository)
         {
             this.bookRepository = bookRepository;
         }

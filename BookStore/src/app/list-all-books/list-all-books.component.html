@@ -1,0 +1,18 @@
+<div class="table-responsive">
+  <table class="table table-primary">
+    <thead>
+      <tr>
+        <th >Id</th>
+        <th>Title </th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr *ngFor="let book of books">
+        <td >{{book.id}}</td>
+        <td>{{book.title}}</td>
+        <td>{{book.description}}</td>
+      </tr>
+    </tbody>
+  </table>
+</div>

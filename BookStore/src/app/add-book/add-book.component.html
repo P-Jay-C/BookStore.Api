@@ -1,0 +1,20 @@
+<div class="container">
+<form [formGroup]="bookForm" (submit)="AddBook()">
+
+<div class="mb-3">
+  <label for="" class="form-label">Title</label>
+  <input type="text" name="title" formControlName="title" id="" class="form-control" placeholder="Enter book title" aria-describedby="helpId">
+</div>
+
+<div class="mb-3">
+  <label for="" class="form-label">Description</label>
+  <input type="text" name="description" formControlName="description" id="" class="form-control" placeholder="Enter book description" aria-describedby="helpId">
+</div>
+
+<button class="btn btn-primary " type="submit" [disabled]="!bookForm?.valid">
+  Save
+</button>
+</form>
+</div>
+
+
